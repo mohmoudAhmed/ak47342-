@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdikaafi Ahmed Maxamuud | Portfolio</title>
+<meta name="description" content="Architecture and interior design portfolio of Abdikaafi Ahmed Maxamuud">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="brand" id="brandName">Portfolio</div>
+    <nav class="tools" aria-label="Tools">
+      <button type="button" id="btnContents" class="tool tool-text" aria-label="Go to contents">Contents</button>
+      <button type="button" id="btnZoom" class="tool" aria-label="Zoom">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>
+      </button>
+      <button type="button" id="btnSound" class="tool" aria-label="Page sound on or off" aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z"/><path class="wave" d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11"/></svg>
+      </button>
+      <button type="button" id="btnFull" class="tool" aria-label="Full screen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+      <button type="button" id="btnPrint" class="tool" aria-label="Save whole portfolio as PDF">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3.5h10V8M7 17H4.5v-7.5h15V17H17M7 14h10v6.5H7z"/></svg>
+      </button>
+      <a id="btnCV" class="cta" href="cv/CV.pdf" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 11 12 15.5 16.5 11M5 20h14"/></svg>
+        <span>Download CV</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="viewport" id="viewport" aria-label="Portfolio book">
+    <div class="scaler" id="scaler">
+      <div class="book" id="book"></div>
+    </div>
+  </main>
+
+  <footer class="pager">
+    <button type="button" id="btnPrev" class="pg-btn" aria-label="Previous page">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+    </button>
+    <div class="pg-info" id="pageInfo" aria-live="polite">Cover</div>
+    <button type="button" id="btnNext" class="pg-btn" aria-label="Next page">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+    </button>
+  </footer>
+</div>
+
+<div class="print-all" id="printAll" aria-hidden="true"></div>
+
+<noscript><p style="padding:24px;font-family:sans-serif">Please turn on JavaScript to view this portfolio.</p></noscript>
+<script src="js/data.js"></script>
+<script src="js/book.js"></script>
+</body>
+</html>
